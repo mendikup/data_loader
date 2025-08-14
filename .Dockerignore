@@ -1,0 +1,5 @@
+.scripts
+.venv
+.infrastructure
+.gitignore
+.README.md
