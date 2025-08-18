@@ -9,9 +9,8 @@ class DataLoader:
     def load_data(self):
         conn = self.connector.get_conection()
         cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT * FROM ffffffffffffffffffffffff")
+        cursor.execute("SELECT * FROM data")
         rows = cursor.fetchall()
-        self.connector.close_conection()
         return rows
 
 
