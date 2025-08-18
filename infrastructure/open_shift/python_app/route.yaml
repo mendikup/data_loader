@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: data-loader
+  labels:
+    app: data-loader
+spec:
+  to:
+    kind: Service
+    name: data-loader
+  port:
+    targetPort: http    # must match the service port name
+  tls:
+    termination: edge   # optional: remove if you want plain HTTP
