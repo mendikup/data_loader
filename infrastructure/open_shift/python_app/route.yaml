@@ -9,6 +9,6 @@ spec:
     kind: Service
     name: data-loader
   port:
-    targetPort: http    # must match the service port name
+    targetPort: http
   tls:
-    termination: edge   # optional: remove if you want plain HTTP
+    termination: edge

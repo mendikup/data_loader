@@ -3,7 +3,9 @@ import os
 
 
 class DBConnector:
-
+    """
+    Class that responsible for the connection to the db
+    """
 
     def __init__(self):
         host = os.getenv("MYSQL_HOST", "localhost")

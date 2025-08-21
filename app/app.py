@@ -4,9 +4,6 @@ from services.dal.data_loader import DataLoader
 app = FastAPI()
 loader = DataLoader()
 
-@app.get("/")
-def root():
-    return {"ok": True}
 
 @app.get("/health")
 def health():
